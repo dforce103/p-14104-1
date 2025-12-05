@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PostComment extends BaseEntity {
     @ManyToOne
-    @JsonIgnore
+//    @JsonIgnore  -> DTO를 사용하면 필요 없음
     private Post post;
     private String content;
 

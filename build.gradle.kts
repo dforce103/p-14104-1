@@ -25,18 +25,24 @@ repositories {
 }
 
 dependencies {
+    // Validation
     implementation("org.springframework.boot:spring-boot-starter-validation")
-
+    // Web
     implementation("org.springframework.boot:spring-boot-starter-web")
-
+    // JPA
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    runtimeOnly("com.h2database:h2")
 
+    // DB - H2
+    runtimeOnly("com.h2database:h2")
+    runtimeOnly("org.springframework.boot:spring-boot-h2console")
+
+    // Test
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
+    // Devtools
     developmentOnly("org.springframework.boot:spring-boot-devtools")
-
+    //lombok
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
 

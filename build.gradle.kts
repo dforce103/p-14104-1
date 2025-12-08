@@ -37,6 +37,8 @@ dependencies {
     runtimeOnly("org.springframework.boot:spring-boot-h2console")
 
     // Test
+    // ✅ Web MVC 테스트용 (Spring Boot 4에서 분리됨)
+    testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
